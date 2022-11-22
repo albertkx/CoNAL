@@ -56,13 +56,13 @@ CUDA_VISIBLE_DEVICES=0 srun --gres=gpu:1 -t 72:00:00 python3 -m ood_generation.g
 	--num_generations 1000 \
 	--generation_batch_size 16 \
 	--example_generator_size large \
-        --label_generator_size gpt3 \
+        --label_generator_size large \
 	--output_dir_name test \
 	--do_moby \
 	--seed 1
 ```
 
-By default, label generation uses the `text-davinci-002` GPT-3 endpoint and example generation uses GPT-J 6B. Both of these generator models can be easily swapped by changing the parameter passed in to `label_generator_size` and `example_generator_size`, respectively.
+By default, label and example generation use GPT-J 6B. Both of these generator models can be easily swapped out by changing parameters, e.g., by passing `gpt3` instead of `large`.
 
 ### Training Models
 
