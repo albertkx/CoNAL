@@ -94,6 +94,6 @@ To score all models of name `model_name_here` on all splits of dataset `dataset_
   author    = {Albert Xu and Xiang Ren and Robin Jia},
   title     = {CoNAL: Anticipating Outliers with Large Language Models},
   booktitle = {arXiv},
-  year      = {2023},
+  year      = {2022},
 }
 ```
